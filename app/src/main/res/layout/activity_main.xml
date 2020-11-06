@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_Nombre"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingTop="@dimen/Top"
+        android:layout_marginBottom="@dimen/Bottom" />
+
+    <TextView
+        android:id="@+id/txtFnacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/Bottom"
+        android:paddingTop="@dimen/Top"
+        android:text="@string/txt_fecha" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_tel"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingTop="@dimen/Top"
+        android:layout_marginBottom="@dimen/Bottom" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_Email"
+        android:inputType = "textEmailAddress"
+        android:maxLines="1"
+        android:paddingTop="@dimen/Top"
+        android:layout_marginBottom="@dimen/Bottom" />
+
+     <EditText
+        android:id="@+id/txtDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint ="@string/txt_Descr"
+        android:inputType="textMultiLine"
+        android:paddingTop="@dimen/Top"
+        android:layout_marginBottom="@dimen/Bottom" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/boton1"
+        android:theme="@style/MiBotonRaised"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirma"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+     <TextView
+        android:id="@+id/veoNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="@dimen/Top"
+        android:text="@string/txtNombre"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        card_view:layout_constraintEnd_toStartOf="@+id/datoNombre"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/datoNombre"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:paddingTop="@dimen/Top"
+        android:text="----"
+        android:textSize="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/veofecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/veoNombre"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingTop="@dimen/Top"
+        android:text="@string/txtfecha"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/veoNombre" />
+
+    <TextView
+        android:id="@+id/datoFecha"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:paddingTop="@dimen/Top"
+        android:text="----"
+        android:textSize="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/datoNombre" />
+
+    <TextView
+        android:id="@+id/veoTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/veofecha"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="26dp"
+        android:paddingTop="@dimen/Top"
+        android:text="@string/txttel"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/veofecha" />
+
+    <TextView
+        android:id="@+id/datoTel"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:paddingTop="@dimen/Top"
+        android:text="----"
+        android:textSize="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/datoFecha"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/veoemail"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/veoTelefono"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="@dimen/Top"
+        android:text="@string/txtEmail"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/veoTelefono" />
+
+    <TextView
+        android:id="@+id/datoEmail"
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:paddingTop="@dimen/Top"
+        android:text="----"
+        android:textSize="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/datoTel"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/veodescr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/veoemail"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="33dp"
+        android:paddingTop="@dimen/Top"
+        android:text="@string/txtDescr"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/veoemail" />
+
+    <TextView
+        android:id="@+id/datoDescr"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:paddingTop="@dimen/Top"
+        android:text="----"
+        android:textSize="20dp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/veodescr"
+        tools:ignore="NotSibling" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btneditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/veodescr"
+        android:layout_marginBottom="64dp"
+        android:text="@string/boton2"
+        android:theme="@style/MiBotonRaised"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.498"
+        card_view:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
